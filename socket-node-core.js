@@ -6,7 +6,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-const client = net.createConnection({ host: '192.168.0.118', port: 3000 }, () => {  // Substitua '127.0.0.1' pelo IP do servidor
+const client = net.createConnection({ host: '192.168.0.1', port: 3000 }, () => {  // Substitua '127.0.0.1' pelo IP do servidor
   console.log('Conectado ao servidor de chat.');
   rl.prompt();
 
